@@ -26,10 +26,6 @@ jobs:
       - name: Install Dependencies
         run: flutter pub get
 
-      - name: Build APK
-        run: |
-          flutter build apk --debug
-
       - name: Build IPA
         run: flutter build ipa --debug --no-codesign
 

@@ -28,10 +28,10 @@ jobs:
 
       - name: Build APK
         run: |
-          flutter build apk --release
+          flutter build apk --debug
 
       - name: Build IPA
-        run: flutter build ipa --no-codesign
+        run: flutter build ipa --debug --no-codesign
 
       - name: Compress Archives and IPAs
         run: |
